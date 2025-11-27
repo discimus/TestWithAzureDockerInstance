@@ -1,0 +1,8 @@
+services:
+  testwithazuredockerinstance:
+    image: testwithazuredockerinstance
+    build:
+      context: .
+      dockerfile: TestWithAzureDockerInstance/Dockerfile
+    ports:
+      - '80:8080'
